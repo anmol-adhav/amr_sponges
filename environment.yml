@@ -1,0 +1,40 @@
+name: amr_sponge
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # Core scientific
+  - numpy=1.24.3
+  - pandas=1.5.3
+  - matplotlib=3.10.8
+  - scipy=1.15.3
+  - biopython=1.82
+
+  # Structure prediction dependencies
+  - jax=0.4.25
+  - dm-haiku=0.0.10
+  - tensorflow-macos=2.13.1  # macOS ARM only; use tensorflow on Linux
+  - keras=2.13.1
+
+  # Docking
+  - autodock-vina
+  - openbabel
+
+  # Utilities
+  - requests=2.33.0
+  - tqdm=4.67.3
+  - tabulate=0.10.0
+  - py3dmol=2.5.4
+
+  - pip:
+    - colabfold[alphafold]==1.5.5
+    - alphafold-colabfold==2.3.6
+
+# External binaries (install manually):
+# Foldseek: https://mmseqs.com/foldseek/foldseek-osx-universal.tar.gz
+# Version used: 8dc75c74ad0eddab73cfd905963d13bf74dc012b
