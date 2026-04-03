@@ -1,5 +1,5 @@
 # amr_sponges
-Pipeline for discovery of AMR related protein
+Structural Identification of Piperacillin/Tazobactam Sponge Candidates in *Escherichia coli*
 # AMR-Sponge: Structural Identification of Piperacillin/Tazobactam Sponge Candidates in *Escherichia coli*
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
